@@ -20,7 +20,11 @@ const SocialFollow = () => {
         <FontAwesomeIcon icon={faLinkedinIn} size="2x" />
       </a>
 
-      <a href="https://github.com/siminmaleki" className="fa-github social">
+      <a href="https://github.com/siminmaleki" className="fa-twitter social">
+        <FontAwesomeIcon icon={faTwitter} size="2x" />
+      </a>
+
+      <a href="https://twitter.com/siminmaleki" className="fa-github social">
         <FontAwesomeIcon icon={faGithub} size="2x" />
       </a>
 

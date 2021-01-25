@@ -91,28 +91,40 @@ html body {
 }
 
 .introduction {
-  width: 50vw;
+  width: 70vw;
   height: 50vh;
   position: absolute;
   top: 10vmin;
-  left: 30vmin;
+  left: 20vmin;
   @include desktop {
+    left: 30vmin;
   }
   h1 {
     color: color(dark-blue);
-    font-size: 2.5em;
+    font-size: 1.5em;
+    @include desktop {
+      font-size: 2.5em;
+    }
   }
 
   .bio {
     color: color(light-yellow);
-    font-size: 2.5em;
+    font-size: 1.5em;
     text-align: left;
+
+    @include desktop {
+      font-size: 2.5em;
+    }
   }
 
   #briefIntro {
     margin-top: 8vmin;
     color: color(dark-yellow);
-    font-size: 1.3em;
+    font-size: 0.8em;
+
+    @include desktop {
+      font-size: 1.3em;
+    }
   }
 }
 
