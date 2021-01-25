@@ -1,0 +1,22 @@
+.socialContainer {
+  position: relative;
+  top: 5vmin;
+  left: 10vmin;
+  display: flex;
+  justify-content: space-around;
+  width: 20vw;
+
+  .social {
+    color: color(light-blue);
+
+    :hover {
+      color: color(dark-blue);
+    }
+  }
+
+  @include desktop {
+    top: 3vmin;
+    left: 10vmin;
+    width: 15vw;
+  }
+}

@@ -1,0 +1,35 @@
+.posts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  // list-style-type: none;
+  // margin: 0;
+}
+
+.post {
+  margin: 1rem 0;
+  list-style: none;
+  width: 30vmin;
+  height: 40vmin;
+  border: 2px solid color(dark-blue);
+
+  // a {
+  //   color: #000000;
+  //   display: block;
+  //   padding: 1rem;
+  //   text-decoration: none;
+  // }
+
+  // a:hover {
+  //   background: #e4e4e4e4;
+  // }
+
+  // h2 {
+  //   margin-bottom: 0;
+  // }
+  // p {
+  //   color: #777777;
+  //   font-size: 0.8rem;
+  //   font-style: italic;
+  // }
+}

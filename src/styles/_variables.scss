@@ -1,0 +1,35 @@
+$colors: (
+  // dark-background: darken(#171321, 30%),
+    dark-background: #19181a,
+  dark-pink: #a16e83,
+  light-pink: #faa6c8,
+  dark-yellow: #cebc81,
+  light-yellow: #fcc712,
+  green: #479761,
+  light-background: lighten(#19181a, 20%),
+  light-blue: #90ccf4,
+  blue: #5da2d5,
+  dark-blue: #216e9c,
+  // background-shape: lighten(#192734, 10%),
+    text-color: #f8f9fa,
+  // orange: #ce916a,
+    // sky-blue: #1da1f2,
+    // darkPink: #c10b7e,
+    // myred: #ff0000,
+    // yellow: #e5e510,
+    //   myblack: #1e1e1e,
+    // linkedinblue: #0077b5,
+    // youtubered: #f00
+);
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+$desktop: 1000px;
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}

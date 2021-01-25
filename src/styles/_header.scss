@@ -1,0 +1,127 @@
+.site-navigation {
+  position: fixed;
+  top: 0;
+  height: 8vmin;
+  width: 100vw;
+  // background: color(dark-background);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: color(text-color);
+  font-weight: 500;
+  z-index: 1;
+  background: transparent;
+  // background: color(light-background);
+  // z-index: 1;
+  &.active {
+    background: linear-gradient(
+      to top left,
+      color(dark-blue),
+      color(light-blue)
+    );
+  }
+  // .title {
+  //   font-size: 1em;
+  //   text-decoration: none;
+  //   // margin-left: 3vmin;
+  //   text-transform: uppercase;
+  // }
+
+  .logoContainer {
+    h1 {
+      text-decoration: none;
+      font-size: 2em;
+      position: relative;
+      left: 5vmin;
+      background: repeating-linear-gradient(
+        45deg,
+        color(dark-pink),
+        color(dark-pink) 30%,
+        color(dark-yellow) 30%,
+        color(dark-yellow) 60%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-transform: uppercase;
+    }
+  }
+
+  // .logo {
+
+  // }
+
+  .menu-content-container {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 40px;
+    left: 120vmin;
+    transition: 300ms ease left;
+    text-align: center;
+
+    @include desktop {
+      // background: color(dark-background);
+      left: 0;
+      height: auto;
+      top: 0;
+      position: relative;
+      width: auto;
+    }
+
+    li {
+      padding-top: 5vmin;
+      .active {
+        color: color(light-yellow);
+      }
+
+      @include desktop {
+        padding: 0;
+      }
+    }
+
+    ul {
+      display: flex;
+      list-style-type: none;
+      flex-direction: column;
+      padding: 0;
+      z-index: 2;
+      height: 100vh;
+      width: 100vw;
+      background-color: color(dark-background);
+      @include desktop {
+        height: auto;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 45vmin;
+        position: relative;
+        // top: 5vmin;
+        right: 10vmin;
+        background-color: transparent;
+      }
+
+      a {
+        text-decoration: none;
+        color: color(text-color);
+
+        &:hover {
+          color: color(light-pink);
+        }
+      }
+    }
+
+    &.active {
+      left: 0px;
+    }
+  }
+  .ion-ios-menu {
+    // display: flex;
+    font-size: 5vmin;
+    width: 10vw;
+    // align-items: center;
+    cursor: pointer;
+
+    @include desktop {
+      display: none;
+    }
+  }
+}
