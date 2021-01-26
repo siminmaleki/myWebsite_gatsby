@@ -1,0 +1,5 @@
+I:\Website\Final\website\gatsbymarkdown\mywebsite\node_modules\.bin
+
+I:\Website\Final\website\gatsbymarkdown\mywebsite\node_modules
+
+I:\Website\Final\website\gatsbymarkdown\mywebsite\node_modules

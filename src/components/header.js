@@ -23,7 +23,7 @@ const Header = () => {
     },
     {
       title: "Tutorials",
-      path: "tutorials",
+      path: "tutorial",
     },
     // {
     //   title: "Podcasts",
