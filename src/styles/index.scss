@@ -1,6 +1,7 @@
 @import "./variables";
 @import "./header";
 @import "./socialFollow";
+@import "./blog";
 
 html body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -13,7 +14,7 @@ html body {
   padding: 0;
   margin: 0;
   z-index: 0;
-  height: 100vh;
+  height: 120vh;
 
   a {
     color: color(light-blue);

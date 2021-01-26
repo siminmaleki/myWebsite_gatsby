@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
+import Img from "gatsby-image"
 
 export const query = graphql`
   query($slug: String!) {
@@ -9,22 +10,29 @@ export const query = graphql`
       frontmatter {
         title
         date
+        featuredImage {
+          childImageSharp {
+            fluid(maxWidth: 800) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
       html
     }
   }
 `
 
-const Blog = props => {
+export default function BlogPost({ data }) {
+  let post = data.markdownRemark
+  let featuredImgFluid = post.frontmatter.featuredImage.childImageSharp.fluid
   return (
     <Layout>
-      <h1>{props.data.markdownRemark.frontmatter.title}</h1>
-      <p> {props.data.markdownRemark.frontmatter.date}</p>
-      <div
-        dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}
-      ></div>
+      <div>
+        <h1>{post.frontmatter.title}</h1>
+        <Img fluid={featuredImgFluid} />
+        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+      </div>
     </Layout>
   )
 }
-
-export default Blog

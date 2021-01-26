@@ -1,11 +1,12 @@
 ---
+slug: "/posts/gatsby/gatsby"
 title: "The Great bootcamp"
 date: "2019-04-04"
+author: "Simin Maleki"
+featuredImage: Elsa.jpg
 ---
 
-I just launched a new bootcamp!
-
-![Elsa](./Elsa.jpg)
+I just launched a new bootcamp!j asdfkj asdfkja asdkjf asdkj adsfkj asdfkj asdfkj asdfj asdkfj asdkj asdf
 
 ## Topics Covered
 
