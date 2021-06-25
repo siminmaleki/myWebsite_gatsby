@@ -30,22 +30,29 @@ const IndexPage = () => {
             <BioAnimatedText />
           </div>
           <div id="briefIntro">
-            I'm an experienced full-stack developer and BPM expert.
+            I'm a woman in tech with more than 15 years experiences in various
+            industries.
             <br />
-            I've worked in different domains.
+            By looking at
+            <Link to={"/about"}> My Profile </Link>
+            it may seem a little bit difficult to categorize me !
+            <br /> But getting my hands dirty in different categories has made
+            me improve.
             <br />
-            I'll share my experiences in
+            <br />
+            I'll also share anything when I feel insightful and kids are not
+            around in
             <Link to={"/blog"}> BLOG </Link>
             and
             <Link to={"/tutorial "}> TUTORIAL </Link> sections.
-            <br /> We're going to have lots of fun here !
-            <br />I also have a wonderful programmer daughter <nbsp />
-            <a href={`https://twitter.com/diana_ashktorab`} target="_blank">
-              Diana
+            <br />
+            <br />I also have a wonderful programmer daughter 'Diana Ashktorab'{" "}
+            <br />
+            Don't forget to check her website <nbsp />
+            <a href={`https://dianash.dev`} target="_blank">
+              HERE
             </a>
             <br />
-            Want to know more about me ? Just click
-            <Link to={`/about`}> HERE</Link>
           </div>
           <SocialFollow />
         </section>

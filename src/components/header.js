@@ -39,7 +39,7 @@ const Header = () => {
       path: "Research",
     },
     {
-      title: "About me",
+      title: "My Profile",
       path: "who",
     },
   ]
