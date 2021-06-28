@@ -7,7 +7,9 @@ import Img from "gatsby-image"
 const Tutorial = () => {
   const data = useStaticQuery(graphql`
     query {
-      allMarkdownRemark {
+      allMarkdownRemark(
+        filter: { frontmatter: { postType: { eq: "TutorialPost" } } }
+      ) {
         edges {
           node {
             frontmatter {

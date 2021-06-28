@@ -40,7 +40,7 @@ const Header = () => {
     },
     {
       title: "My Profile",
-      path: "who",
+      path: "about",
     },
   ]
 

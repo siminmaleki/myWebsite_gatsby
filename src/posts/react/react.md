@@ -3,6 +3,7 @@ slug: "/posts/react/react"
 title: "React"
 date: "2019-04-04"
 author: "Simin Maleki"
+postType: "TutorialPost"
 featuredImage: Elsa.jpg
 ---
 

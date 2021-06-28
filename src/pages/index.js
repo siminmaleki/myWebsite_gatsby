@@ -30,25 +30,26 @@ const IndexPage = () => {
             <BioAnimatedText />
           </div>
           <div id="briefIntro">
-            I'm a woman in tech with more than 15 years experiences in various
-            industries.
+            So happy to host you here! <br />
+            I'm a self-motivated person, always tried to reach goals by teaching
+            myself to be dedicated and consistent.
+            <br /> A day never comes to the end for me without a new learning or
+            outcome. <br />
+            I've been working in industry for more than 15 years and if you're
+            interested to see my background, I invite you to check
+            <Link to={"/about"}> My Profile. </Link>
             <br />
-            By looking at
-            <Link to={"/about"}> My Profile </Link>
-            it may seem a little bit difficult to categorize me !
-            <br /> But getting my hands dirty in different categories has made
-            me improve.
-            <br />
-            <br />
-            I'll also share anything when I feel insightful and kids are not
-            around in
+            <br />I sometimes write when kids are not around; here or elsewhere.
+            <br /> But you can find them all in
             <Link to={"/blog"}> BLOG </Link>
-            and
-            <Link to={"/tutorial "}> TUTORIAL </Link> sections.
+            or
+            <Link to={"/tutorial "}> TUTORIAL </Link>. There are not many so
+            far; but I try to write more from now on.
             <br />
-            <br />I also have a wonderful programmer daughter 'Diana Ashktorab'{" "}
             <br />
-            Don't forget to check her website <nbsp />
+            I'm also mentoring my wonderful daughter 'Diana Ashktorab' on her
+            journey to learn programming. Don't forget to check her website{" "}
+            <nbsp />
             <a href={`https://dianash.dev`} target="_blank">
               HERE
             </a>

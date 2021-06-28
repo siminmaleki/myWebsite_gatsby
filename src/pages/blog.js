@@ -7,13 +7,16 @@ import Img from "gatsby-image"
 const BlogPage = () => {
   const data = useStaticQuery(graphql`
     query {
-      allMarkdownRemark {
+      allMarkdownRemark(
+        filter: { frontmatter: { postType: { eq: "BlogPost" } } }
+      ) {
         edges {
           node {
             frontmatter {
               title
               date
               author
+              postType
               featuredImage {
                 childImageSharp {
                   fluid(maxWidth: 800) {

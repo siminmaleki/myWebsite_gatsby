@@ -3,6 +3,7 @@ slug: "/posts/gatsby/gatsby"
 title: "The Great bootcamp"
 date: "2019-04-04"
 author: "Simin Maleki"
+postType: "BlogPost"
 featuredImage: Elsa.jpg
 ---
 
