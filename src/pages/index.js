@@ -46,11 +46,13 @@ const IndexPage = () => {
             <Link to={"/tutorial "}> TUTORIAL </Link>. There are not many so
             far; but I try to write more from now on.
             <br />
+            I have made this website in Gatsby and the source code is available
+            in my GitHub.
             <br />
             I'm also mentoring my wonderful daughter 'Diana Ashktorab' on her
             journey to learn programming. Don't forget to check her website{" "}
             <nbsp />
-            <a href={`https://dianash.dev`} target="_blank">
+            <a href={`https://www.dianash.dev`} target="_blank">
               HERE
             </a>
             <br />

@@ -8,3 +8,16 @@
     width: 100vw;
   }
 }
+
+#ProfileContainer {
+  padding-top: 8vmin;
+  color: color(light-grey);
+  text-align: justify;
+  h1,
+  div {
+    padding: 0 20vmin;
+  }
+  p {
+    font-size: 1.1em;
+  }
+}

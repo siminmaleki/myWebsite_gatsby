@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
-
+import "../styles/index.scss"
 import Layout from "../components/layout"
 import Img from "gatsby-image"
 
@@ -12,7 +12,7 @@ export const query = graphql`
         date
         featuredImage {
           childImageSharp {
-            fluid(maxWidth: 800) {
+            fluid(maxWidth: 3080, quality: 100, webpQuality: 100) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -28,10 +28,10 @@ export default function ProfilePage({ data }) {
   let featuredImgFluid = post.frontmatter.featuredImage.childImageSharp.fluid
   return (
     <Layout>
-      <div>
-        <h1>{post.frontmatter.title}</h1>
+      <div id="ProfileContainer">
         <Img fluid={featuredImgFluid} />
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <h1>{post.frontmatter.title}</h1>
+        <div id="CV" dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
     </Layout>
   )
