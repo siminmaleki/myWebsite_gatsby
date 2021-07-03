@@ -34,26 +34,30 @@ const IndexPage = () => {
             I'm a self-motivated person, always tried to reach goals by teaching
             myself to be dedicated and consistent.
             <br /> A day never comes to the end for me without a new learning or
-            outcome. <br />
-            I've been working in industry for more than 15 years and if you're
-            interested to see my background, I invite you to check
+            outcome. <br />I have working experiences for more than 18 years. If
+            you're interested to know more about me, I invite you to check
             <Link to={"/about"}> My Profile. </Link>
             <br />
             <br />I sometimes write when kids are not around; here or elsewhere.
             <br /> But you can find them all in
-            <Link to={"/blog"}> BLOG </Link>
-            or
-            <Link to={"/tutorial "}> TUTORIAL </Link>. There are not many so
-            far; but I try to write more from now on.
+            <Link to={"/posts"}> Posts </Link>. There are not many; but I try to
+            write more from now on.
+            <br />I have made this website in Gatsby and the source code is
+            available in{" "}
+            <a
+              href={`https://github.com/siminmaleki/myWebsite_gatsby`}
+              target="_blank"
+            >
+              {" "}
+              my GitHub
+            </a>
+            .
             <br />
-            I have made this website in Gatsby and the source code is available
-            in my GitHub.
             <br />
             I'm also mentoring my wonderful daughter 'Diana Ashktorab' on her
-            journey to learn programming. Don't forget to check her website{" "}
-            <nbsp />
+            journey to learn programming. Don't forget to check her website @
             <a href={`https://www.dianash.dev`} target="_blank">
-              HERE
+              dianash.dev
             </a>
             <br />
           </div>

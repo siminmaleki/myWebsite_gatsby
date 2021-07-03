@@ -4,10 +4,10 @@ import ReactTextTransition, { presets } from "react-text-transition"
 const randomNumber = () => Math.floor(Math.random() * 9999999999 + 10000000000)
 
 const texts = [
-  "Computer Science",
-  "Technology",
   "Business Process Management",
   "Process Mining",
+  "Information Technology",
+  "Programming",
   "Research",
   "Teaching",
 ]

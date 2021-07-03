@@ -4,7 +4,6 @@
   justify-content: space-around;
   position: relative;
   top: 10vmin;
-  height: 100%;
   // list-style-type: none;
   // margin: 0;
 }
@@ -12,7 +11,7 @@
 .post {
   // margin: 1rem 0;
   list-style: none;
-  width: 40vmin;
+  width: 35vmin;
   // height: 40vmin;
   display: block;
   padding: 1em;
@@ -46,3 +45,26 @@
 //     transform: scale(1);
 //   }
 // }
+
+#PostContent {
+  padding-top: 8vmin;
+  color: color(light-grey);
+  text-align: justify;
+
+  h1 {
+    padding: 3vmin 20vmin;
+    color: color(dark-yellow);
+  }
+  div {
+    padding: 0 20vmin;
+  }
+  p {
+    font-size: 1.1em;
+  }
+
+  // img {
+  //   padding: 0;
+  //   margin: 0;
+  //   width: 100%;
+  // }
+}

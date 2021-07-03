@@ -12,7 +12,7 @@ export const query = graphql`
         date
         featuredImage {
           childImageSharp {
-            fluid(maxWidth: 800) {
+            fluid(maxWidth: 3080, quality: 100, webpQuality: 100) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -28,9 +28,9 @@ export default function BlogPost({ data }) {
   let featuredImgFluid = post.frontmatter.featuredImage.childImageSharp.fluid
   return (
     <Layout>
-      <div>
-        <h1>{post.frontmatter.title}</h1>
+      <div id="PostContent">
         <Img fluid={featuredImgFluid} />
+        <h1>{post.frontmatter.title}</h1>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
     </Layout>

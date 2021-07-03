@@ -18,28 +18,16 @@ const Header = () => {
       path: "/",
     },
     {
-      title: "Blog",
-      path: "/blog",
+      title: "Posts",
+      path: "/posts",
     },
-    {
-      title: "Tutorials",
-      path: "tutorial",
-    },
-    // {
-    //   title: "Podcasts",
-    //   path: "Podcasts",
-    // },
 
-    // {
-    //   title: "Apps",
-    //   path: "apps",
-    // },
     {
       title: "Research",
       path: "Research",
     },
     {
-      title: "My Profile",
+      title: "Profile",
       path: "about",
     },
   ]

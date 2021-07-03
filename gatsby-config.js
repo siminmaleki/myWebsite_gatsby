@@ -6,8 +6,8 @@
 
 module.exports = {
   siteMetadata: {
-    title: "SIMIN MALEKi SHAMASBI",
-    author: "Simin Maleki Shamasbi",
+    title: "SIMIN MALEKi",
+    author: "Simin Maleki",
   },
   plugins: [
     "gatsby-plugin-sass",
