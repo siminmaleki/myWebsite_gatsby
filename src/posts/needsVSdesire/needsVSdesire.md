@@ -6,7 +6,8 @@ author: "Simin Maleki"
 postType: "BlogPost"
 featuredImage: needVSdesire-2.jpg
 cardImage: needVSdesire.jpg
-tags: ["management"]
+tags:
+  - management
 ---
 
 A while back, I received a book from an old friend, named "Differences That Make a Difference" written by Dr. Russell Ackoff. This book as the last of his many, is a glossary that would be easily accessible to managers, employees, students and academics alike. one of the topics (section 39) is the difference between Need and Desire, as you may consider the difference in daily life or in your business.

@@ -1,9 +1,11 @@
 import React from "react"
+import { Badge } from "reactstrap"
 import { Link, graphql, useStaticQuery } from "gatsby"
 import Layout from "../components/layout"
 import "../styles/index.scss"
 import Img from "gatsby-image"
 import { navigate } from "gatsby"
+import { slugify } from "../util/utilityFunctions"
 
 const PostsPage = () => {
   const data = useStaticQuery(graphql`
@@ -41,7 +43,7 @@ const PostsPage = () => {
     <Layout>
       <ol className="posts">
         {data.allMarkdownRemark.edges.map(edge => {
-          const tags = edge.node.frontmatter.tags || []
+          const tags = edge.node.frontmatter.tags
           return (
             <li className="post">
               <Link id="postLinks" to={`/post/${edge.node.fields.slug}`}>
@@ -55,7 +57,13 @@ const PostsPage = () => {
                 {edge.node.frontmatter.date} by {edge.node.frontmatter.author}{" "}
               </p>
               <p>{edge.node.excerpt}</p>
-
+              <ul className="post-tags">
+                {tags.map(tag => (
+                  <li>
+                    <Link to={`/tag/${slugify(tag)}`}>#{tag}</Link>
+                  </li>
+                ))}
+              </ul>
               {/* {tags.map(tag => {
                 return [
                   <div
@@ -73,6 +81,9 @@ const PostsPage = () => {
           )
         })}
       </ol>
+      <div>
+        <Badge color="dark">Dark</Badge>
+      </div>
     </Layout>
   )
 }

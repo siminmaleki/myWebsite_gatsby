@@ -6,7 +6,8 @@ author: "Simin Maleki"
 postType: "BlogPost"
 featuredImage: Laila-2.jpg
 cardImage: Laila-1.jpg
-tags: ["life"]
+tags:
+  - life
 ---
 
 The death of my lovely sister at the age of 43 has been the bitterest event happened to me so far. I lost her for rediculous reasons and I still can't believe it.

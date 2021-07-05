@@ -22,8 +22,9 @@
     lighten(color(light-pink), 20%)
   );
   &:hover {
-    transform: scale(1.01);
-    transition: 0.2s ease-in-out;
+    // transform: scale(1.01);
+    // transition: 0.2s ease-in-out;
+    box-shadow: 0 2px 6px 0 color(dark-blue), 0 4px 10px 0 color(dark-blue);
   }
 
   a {
@@ -37,6 +38,18 @@
     color: color(dark-blue);
     font-size: 0.8rem;
     font-style: italic;
+  }
+
+  ul.post-tags {
+    padding: 0;
+    display: inline-flex;
+    list-style: none;
+    li {
+      margin-right: 10px;
+      Link {
+        color: color(dark-pink);
+      }
+    }
   }
 }
 

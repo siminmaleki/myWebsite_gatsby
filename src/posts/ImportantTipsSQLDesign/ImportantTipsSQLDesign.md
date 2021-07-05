@@ -6,7 +6,9 @@ author: "Simin Maleki"
 postType: "BlogPost"
 featuredImage: SQL.jpg
 cardImage: SQL1.png
-tags: ["SQL", "database"]
+tags:
+  - SQL
+  - database
 ---
 
 You as a developer may always use ORMs for CRUD operations, but I believe there is a need for every developer to have at least a basic knowledge about databases and queries as there may be some limitations with ORMs when you get into complicated queries.
